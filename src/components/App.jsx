@@ -5,6 +5,11 @@ import alive from 'images/alive.jpg';
 import PropTypes from 'prop-types';
 import React from 'react';
 
+/**
+ * Main application component.
+ *
+ * @param {string} title - Title for display.
+ */
 const AppComponent = ({ title }) => {
     return (
         <React.Fragment>
