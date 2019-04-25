@@ -17,6 +17,8 @@
     },
     "devDependencies": {
         "@babel/core": "^7.4.3",
+        "@commitlint/cli": "^7.5.2",
+        "@commitlint/config-angular": "^7.5.0",
         "babel-eslint": "^10.0.1",
         "babel-loader": "^8.0.5",
         "babel-preset-airbnb": "^3.2.1",
