@@ -1,6 +1,5 @@
 import 'normalize.css/normalize.css';
 import style from 'styles/App.less';
-import alive from 'images/alive.jpg';
 
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -10,17 +9,18 @@ import React from 'react';
  *
  * @param {string} title - Title for display.
  */
-const AppComponent = ({ title }) => {
+const AppComponent = ({ title, logo }) => {
     return (
         <React.Fragment>
             <h1 className={style.title}>{title}</h1>
-            <img src={alive} alt='alive' />
+            <img src={logo} alt='logo' />
         </React.Fragment>
     );
 };
 
 AppComponent.propTypes = {
     title: PropTypes.string.isRequired,
+    logo: PropTypes.element.isRequired,
 };
 
 AppComponent.defaultProps = {};

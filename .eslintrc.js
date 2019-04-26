@@ -2,6 +2,7 @@ module.exports = {
     root: true,
     env: {
         browser: true,
+        'jest/globals': true,
     },
     parser: 'babel-eslint',
     parserOptions: {
@@ -11,6 +12,7 @@ module.exports = {
         ecmaVersion: 9,
     },
     plugins: [
+        'jest',
         'jsdoc',
         'react',
         'prettier',
@@ -18,8 +20,9 @@ module.exports = {
     extends: [
         'airbnb',
         'eslint:recommended',
+        'plugin:jest/recommended',
         'prettier',
-        'prettier/react'
+        'prettier/react',
     ],
     settings: {
         'import/resolver': {
@@ -35,6 +38,27 @@ module.exports = {
         },
     },
     rules: {
+        'jest/expect-expect': 'error',
+        'jest/lowercase-name': [
+            'error',
+            {
+                ignore: ['describe', 'test']
+            }
+        ],
+        'jest/consistent-test-it': ['error', { fn: 'test', withinDescribe: 'it' }],
+        'jest/no-alias-methods': 'error',
+        'jest/no-disabled-tests': 'warn',
+        'jest/no-empty-title': 'error',
+        'jest/no-focused-tests': 'error',
+        'jest/no-jasmine-globals': 'error',
+        'jest/no-jest-import': 'error',
+        'jest/no-identical-title': 'error',
+        'jest/no-large-snapshots': ['warn', { maxSize: 12 }],
+        'jest/no-mocks-import': 'error',
+        'jest/no-test-callback': 'error',
+        'jest/no-truthy-falsy': 'error',
+        'jest/prefer-to-have-length': 'warn',
+        'jest/valid-expect': 'error',
         'jsdoc/check-alignment': 'error',
         'jsdoc/check-examples': 'error',
         'jsdoc/check-indentation': 'error',
