@@ -7,7 +7,8 @@
         "lint": "eslint ./src --ext=js,jsx",
         "lint:fix": "eslint ./src --ext=js,jsx --fix",
         "start": "webpack-dev-server --mode development --open --hot",
-        "test": "jest"
+        "test": "jest",
+        "test:staged": "jest --findRelatedTests"
     },
     "dependencies": {
         "classnames": "^2.2.6",
