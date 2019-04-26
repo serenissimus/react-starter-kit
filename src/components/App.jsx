@@ -1,4 +1,3 @@
-import 'normalize.css/normalize.css';
 import style from 'styles/App.less';
 
 import PropTypes from 'prop-types';

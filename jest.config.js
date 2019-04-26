@@ -1,5 +1,5 @@
 module.exports = {
-    rootDir: './src',
+    rootDir: './test',
     moduleNameMapper: {
         '^.+\\.(css|less)$': 'identity-obj-proxy',
     },
