@@ -12,6 +12,7 @@ module.exports = {
         ecmaVersion: 9,
     },
     plugins: [
+        'flowtype',
         'jest',
         'jsdoc',
         'react',
@@ -20,11 +21,15 @@ module.exports = {
     extends: [
         'airbnb',
         'eslint:recommended',
+        'plugin:flowtype/recommended',
         'plugin:jest/recommended',
         'prettier',
         'prettier/react',
     ],
     settings: {
+        flowtype: {
+            onlyFilesWithFlowAnnotation: true,
+        },
         'import/resolver': {
             webpack: {
                 config: './webpack.config.js',
@@ -70,7 +75,6 @@ module.exports = {
         'jsdoc/no-undefined-types': 'error',
         'jsdoc/require-description-complete-sentence': 'error',
         'jsdoc/require-hyphen-before-param-description': 'error',
-        'jsdoc/require-param': 'error',
         'jsdoc/require-param-description': 'error',
         'jsdoc/require-param-name': 'error',
         'jsdoc/require-param-type': 'error',

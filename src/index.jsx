@@ -1,3 +1,4 @@
+// @flow
 import 'normalize.css/normalize.css';
 import alive from 'images/alive.jpg';
 
