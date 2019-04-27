@@ -9,8 +9,6 @@ type Props = {
 
 /**
  * Main application component.
- *
- * @param {string} title - Title for display.
  */
 const AppComponent = ({ title, logo }: Props) => (
     <React.Fragment>
