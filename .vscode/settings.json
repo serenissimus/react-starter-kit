@@ -1,6 +1,13 @@
 {
     "editor.formatOnSave": false,
     "eslint.autoFixOnSave": true,
+    "files.exclude": {
+		".git": true
+	},
     "flow.useNPMPackagedFlow": true,
     "javascript.validate.enable": false,
+    "search.exclude": {
+		"**/node_modules": true,
+		"dist/**": true
+	}
 }
