@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
     target: 'web',
@@ -7,6 +8,15 @@ module.exports = {
     output: {
         path: path.join(__dirname, '/dist'),
         filename: 'bundle.js',
+    },
+    optimization: {
+        minimizer: [
+            new TerserPlugin({
+                terserOptions: {
+                    keep_fnames: true,
+                },
+            }),
+        ],
     },
     resolve: {
         extensions: ['.js', '.jsx'],
