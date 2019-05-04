@@ -83,6 +83,7 @@ module.exports = {
         'jsdoc/require-returns-description': 'error',
         'jsdoc/require-returns-type': 'error',
         'jsdoc/valid-types': 'error',
+        'import/prefer-default-export': 'off',
         'no-caller': 'error',
         'no-cond-assign': 'error',
         'no-debugger': 'error',
