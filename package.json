@@ -4,8 +4,8 @@
     "scripts": {
         "build": "webpack --mode production",
         "clean": "rimraf dist/*",
-        "lint": "eslint ./src --ext=js,jsx",
-        "lint:fix": "eslint ./src --ext=js,jsx --fix",
+        "lint": "eslint ./src ./tests --ext=js,jsx",
+        "lint:fix": "eslint ./src ./tests --ext=js,jsx --fix",
         "start": "webpack-dev-server --mode development --open --hot",
         "test": "jest",
         "test:staged": "jest --findRelatedTests"
