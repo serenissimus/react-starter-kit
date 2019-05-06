@@ -5,11 +5,25 @@ Array [
   <h1
     className="title"
   >
+    It's alive!
+  </h1>,
+  <img
+    alt="logo"
+    src="test-file-stub"
+  />,
+]
+`;
+
+exports[`App should correct render with props 1`] = `
+Array [
+  <h1
+    className="title"
+  >
     Title
   </h1>,
   <img
     alt="logo"
-    src={<div />}
+    src="logo"
   />,
 ]
 `;
