@@ -37,6 +37,7 @@ Available command list.
 | -         | -                                       |
 | start     | Run webpack dev server.                 |
 | test      | Run unit tests.                         |
+| flow      | Run project types check.                |
 | lint      | Run project linter.                     |
 | lint:fix  | Run project linter with `try-fix` mode. |
 | build     | Build project with webpack.             |
