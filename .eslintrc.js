@@ -43,6 +43,70 @@ module.exports = {
         },
     },
     rules: {
+        'flowtype/array-style-complex-type': ['error', 'verbose'],
+        'flowtype/array-style-simple-type': ['error', 'verbose'],
+        'flowtype/boolean-style': ['error', 'boolean'],
+        'flowtype/define-flow-type': 'error',
+        'flowtype/delimiter-dangle': ['error', 'always'],
+        'flowtype/generic-spacing': ['error', 'never'],
+        'flowtype/newline-after-flow-annotation': ['error', 'always'],
+        'flowtype/no-dupe-keys': 'error',
+        'flowtype/no-existential-type': 'error',
+        'flowtype/no-mixed': 'error',
+        'flowtype/no-primitive-constructor-types': 'error',
+        'flowtype/no-types-missing-file-annotation': 'error',
+        'flowtype/no-weak-types': [
+            'error',
+            {
+                any: false,
+                Object: false,
+                Function: false,
+            },
+        ],
+        'flowtype/object-type-delimiter': ['error', 'comma'],
+        'flowtype/require-compound-type-alias': ['error', 'always'],
+        'flowtype/require-parameter-type': 'error',
+        'flowtype/require-return-type': [
+            'error',
+            'always',
+            {
+                'annotateUndefined': 'never',
+            },
+        ],
+        'flowtype/require-types-at-top': ['error', 'always'],
+        'flowtype/require-valid-file-annotation': [
+            'error',
+            'always', {
+                annotationStyle: 'line',
+            },
+        ],
+        'flowtype/require-variable-type': [
+            'error',
+            {
+                excludeVariableTypes: {
+                    var: false,
+                    let: false,
+                    const: false,
+                }
+            }
+        ],
+        'flowtype/semi': ['error', 'always'],
+        'flowtype/space-after-type-colon': ['error', 'always'],
+        'flowtype/space-before-generic-bracket': ['error', 'never'],
+        'flowtype/space-before-type-colon': ['error', 'never'],
+        'flowtype/type-id-match': [
+            'error',
+            '^([A-Z][a-z0-9]+)+Type$',
+        ],
+        'flowtype/type-import-style': [
+            'error',
+            'identifier',
+            {
+                ignoreTypeDefault: false,
+            },
+        ],
+        'flowtype/union-intersection-spacing': ['error', 'always'],
+        'flowtype/use-flow-type': 'error',
         'jest/expect-expect': 'error',
         'jest/lowercase-name': [
             'error',
