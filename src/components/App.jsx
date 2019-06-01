@@ -1,10 +1,11 @@
 // @flow
+
 import alive from 'assets/alive.jpg';
 import style from 'styles/App.less';
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
-type Props = {
+type PropsType = {
     title?: string,
     logo?: string,
 };
@@ -12,7 +13,7 @@ type Props = {
 /**
  * Main application component.
  */
-const AppComponent = ({ title, logo }: Props) => (
+const AppComponent: Function = ({ title, logo }: PropsType): React.Node => (
     <React.Fragment>
         <Helmet>
             <title>{title}</title>
