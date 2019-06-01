@@ -12,6 +12,9 @@ type PropsType = {
 
 /**
  * Main application component.
+ *
+ * @param {PropsType} props - Component properties.
+ * @returns {React.Node} - App's component block.
  */
 const AppComponent: Function = ({ title, logo }: PropsType): React.Node => (
     <React.Fragment>
